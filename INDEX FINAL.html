@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Non-Compoundable Criminal Proceedings from Matrimonial Disputes | Bombay High Court Research Repository</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Chart.js CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,300&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        serif: ['Merriweather', 'serif'],
+                    },
+                    colors: {
+                        legal: {
+                            50: '#f4f6f9',
+                            100: '#e2e8f0',
+                            800: '#1e293b',
+                            900: '#0f172a',
+                            accent: '#b45309',
+                            gold: '#d97706'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc;
+            color: #334155;
+        }
+        .hero-pattern {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
+        .card-shadow {
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+        }
+        table.legal-table th {
+            background-color: #1e293b;
+            color: #ffffff;
+            font-weight: 600;
+        }
+        table.legal-table tr:nth-child(even) {
+            background-color: #f8fafc;
+        }
+        table.legal-table tr:hover {
+            background-color: #f1f5f9;
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <!-- Top Academic / GitHub Banner -->
+    <header class="hero-pattern text-white shadow-md">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+                <div>
+                    <div class="flex items-center space-x-2 text-amber-400 text-sm font-semibold tracking-wider uppercase mb-2">
+                        <i class="fa-solid fa-scale-balanced mr-1"></i> Bombay High Court Research Repository
+                    </div>
+                    <h1 class="text-3xl sm:text-4xl font-serif font-bold tracking-tight">
+                        Non-Compoundable Criminal Proceedings from Matrimonial Disputes
+                    </h1>
+                    <p class="mt-2 text-slate-300 max-w-3xl text-sm sm:text-base">
+                        A rigorous jurimetric and doctrinal analysis of 20 authoritative judgments from the Bombay High Court concerning Section 482 CrPC / Section 528 BNSS quashing of Section 498A IPC / Section 85 BNS proceedings arising from matrimonial discord.
+                    </p>
+                </div>
+                <div class="flex items-center space-x-3 bg-slate-800/80 p-3 rounded-lg border border-slate-700">
+                    <div class="text-right">
+                        <div class="text-xs text-slate-400">Project Repository</div>
+                        <a href="https://github.com/legal-research/bombay-hc-498a-quashing" class="text-sm font-medium text-blue-400 hover:underline flex items-center justify-end">
+                            <i class="fa-brands fa-github mr-1.5"></i> github.com/legal-research
+                        </a>
+                    </div>
+                    <span class="bg-green-500/20 text-green-400 text-xs px-2.5 py-1 rounded-full font-semibold border border-green-500/30">Active v3.2</span>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation Bar -->
+    <nav class="bg-white border-b border-slate-200 sticky top-0 z-50 shadow-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex space-x-8 items-center">
+                    <a href="#overview" class="text-slate-700 hover:text-amber-600 font-medium text-sm transition-colors flex items-center">
+                        <i class="fa-solid fa-house-chimney mr-1.5 text-slate-400"></i> Overview
+                    </a>
+                    <a href="#analytics" class="text-slate-700 hover:text-amber-600 font-medium text-sm transition-colors flex items-center">
+                        <i class="fa-solid fa-chart-pie mr-1.5 text-slate-400"></i> Data & Visualizations
+                    </a>
+                    <a href="#doctrinal" class="text-slate-700 hover:text-amber-600 font-medium text-sm transition-colors flex items-center">
+                        <i class="fa-solid fa-book-open mr-1.5 text-slate-400"></i> Doctrinal Evolution
+                    </a>
+                    <a href="#repository" class="text-slate-700 hover:text-amber-600 font-medium text-sm transition-colors flex items-center">
+                        <i class="fa-solid fa-database mr-1.5 text-slate-400"></i> Judgment Database (20)
+                    </a>
+                </div>
+                <div class="flex items-center space-x-3">
+                    <span class="text-xs text-slate-500 hidden sm:inline">Team: Legal Eagles</span>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Container -->
+    <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 w-full space-y-12">
+
+        <!-- SECTION 1: OVERVIEW & METRICS -->
+        <section id="overview" class="space-y-6">
+            <div class="bg-white rounded-xl p-6 sm:p-8 card-shadow border border-slate-200">
+                <div class="border-b border-slate-100 pb-4 mb-6">
+                    <h2 class="text-2xl font-serif font-bold text-slate-900">Project Overview & Scope</h2>
+                    <p class="text-sm text-slate-500 mt-1">Empirical dataset covering Bombay High Court rulings on matrimonial criminal quashing (Section 482 CrPC / Section 498A IPC).</p>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <div class="bg-slate-50 p-5 rounded-lg border border-slate-200">
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm font-medium text-slate-500">Total Judgments Coded</span>
+                            <i class="fa-solid fa-gavel text-amber-600 text-xl"></i>
+                        </div>
+                        <div class="text-3xl font-bold text-slate-900 mt-2">20</div>
+                        <div class="text-xs text-slate-500 mt-1">Decided between 2021–2026</div>
+                    </div>
+                    <div class="bg-slate-50 p-5 rounded-lg border border-slate-200">
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm font-medium text-slate-500">Applications Allowed</span>
+                            <i class="fa-solid fa-circle-check text-green-600 text-xl"></i>
+                        </div>
+                        <div class="text-3xl font-bold text-slate-900 mt-2">17 <span class="text-sm font-normal text-slate-500">(85%)</span></div>
+                        <div class="text-xs text-slate-500 mt-1">2 Partly Allowed, 1 Dismissed</div>
+                    </div>
+                    <div class="bg-slate-50 p-5 rounded-lg border border-slate-200">
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm font-medium text-slate-500">Primary Statutes</span>
+                            <i class="fa-solid fa-book-bookmark text-blue-600 text-xl"></i>
+                        </div>
+                        <div class="text-3xl font-bold text-slate-900 mt-2">s 482 CrPC / 498A</div>
+                        <div class="text-xs text-slate-500 mt-1">Inherent powers & cruelty prosecutions</div>
+                    </div>
+                    <div class="bg-slate-50 p-5 rounded-lg border border-slate-200">
+                        <div class="flex items-center justify-between">
+                            <span class="text-sm font-medium text-slate-500">Court / Forum</span>
+                            <i class="fa-solid fa-scale-balanced text-purple-600 text-xl"></i>
+                        </div>
+                        <div class="text-3xl font-bold text-slate-900 mt-2">Bombay HC</div>
+                        <div class="text-xs text-slate-500 mt-1">Principal Seat & Benches</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 2: DATA ANALYSIS & VISUALIZATIONS -->
+        <section id="analytics" class="space-y-8">
+            <div class="border-b border-slate-200 pb-4">
+                <h2 class="text-2xl font-serif font-bold text-slate-900">Data Analysis & Visualizations</h2>
+                <p class="text-sm text-slate-600 mt-1">Quantitative breakdown of judicial trends, case classifications, statutory provisions, and outcomes.</p>
+            </div>
+
+            <!-- Charts Grid -->
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Chart 1: Judgments per Year -->
+                <div class="bg-white p-6 rounded-xl card-shadow border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="font-serif font-semibold text-lg text-slate-900">Judgments by Year (2021–2026)</h3>
+                            <span class="text-xs bg-blue-50 text-blue-700 px-2.5 py-1 rounded-full font-medium">Temporal Trend</span>
+                        </div>
+                        <p class="text-xs text-slate-500 mb-4">Distribution of analyzed Bombay High Court judgments across decision years.</p>
+                    </div>
+                    <div class="relative h-72 w-full">
+                        <canvas id="chartJudgmentsPerYear"></canvas>
+                    </div>
+                </div>
+
+                <!-- Chart 2: Outcome Distribution -->
+                <div class="bg-white p-6 rounded-xl card-shadow border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="font-serif font-semibold text-lg text-slate-900">Outcome Distribution</h3>
+                            <span class="text-xs bg-amber-50 text-amber-700 px-2.5 py-1 rounded-full font-medium">Adjudication Success</span>
+                        </div>
+                        <p class="text-xs text-slate-500 mb-4">Proportion of quashing applications allowed, partly allowed, or dismissed.</p>
+                    </div>
+                    <div class="relative h-72 w-full flex items-center justify-center">
+                        <canvas id="chartOutcome"></canvas>
+                    </div>
+                </div>
+
+                <!-- Chart 3: Case Types / Routing -->
+                <div class="bg-white p-6 rounded-xl card-shadow border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="font-serif font-semibold text-lg text-slate-900">Distribution by Case Type</h3>
+                            <span class="text-xs bg-purple-50 text-purple-700 px-2.5 py-1 rounded-full font-medium">Procedural Routing</span>
+                        </div>
+                        <p class="text-xs text-slate-500 mb-4">Classification between Criminal Applications (APL), Writ Petitions, and others.</p>
+                    </div>
+                    <div class="relative h-72 w-full flex items-center justify-center">
+                        <canvas id="chartCaseType"></canvas>
+                    </div>
+                </div>
+
+                <!-- Chart 4: Primary Provisions -->
+                <div class="bg-white p-6 rounded-xl card-shadow border border-slate-200 flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4">
+                            <h3 class="font-serif font-semibold text-lg text-slate-900">Primary Statutory Provisions</h3>
+                            <span class="text-xs bg-emerald-50 text-emerald-700 px-2.5 py-1 rounded-full font-medium">Legal Basis</span>
+                        </div>
+                        <p class="text-xs text-slate-500 mb-4">Breakdown of legal provisions invoked across the 20 coded judgments.</p>
+                    </div>
+                    <div class="relative h-72 w-full flex items-center justify-center">
+                        <canvas id="chartProvisions"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 3: DOCTRINAL EVOLUTION & THEMATIC TRENDS -->
+        <section id="doctrinal" class="bg-white rounded-xl p-6 sm:p-8 card-shadow border border-slate-200 space-y-6">
+            <div class="border-b border-slate-100 pb-4">
+                <h2 class="text-2xl font-serif font-bold text-slate-900">Doctrinal Evolution & Key Thematic Trends</h2>
+                <p class="text-sm text-slate-500 mt-1">Synthesis of major jurisprudential shifts in quashing non-compoundable matrimonial proceedings under Section 482 CrPC.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-slate-50 p-6 rounded-lg border border-slate-200 space-y-3">
+                    <div class="flex items-center space-x-3">
+                        <div class="bg-amber-600 text-white p-2.5 rounded-lg">
+                            <i class="fa-solid fa-handshake"></i>
+                        </div>
+                        <h3 class="font-serif font-bold text-slate-900 text-lg">1. Primacy of Amicable Settlement</h3>
+                    </div>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Following foundational rulings like <em>B.S. Joshi (2003)</em> and <em>Ramawatar (2021)</em>, the Bombay High Court consistently exercises inherent powers under Section 482 CrPC to quash non-compoundable Section 498A IPC proceedings once parties execute mutual consent divorces and financial settlements, holding that continuing prosecution serves no purpose when disputes are private and personal.
+                    </p>
+                </div>
+
+                <div class="bg-slate-50 p-6 rounded-lg border border-slate-200 space-y-3">
+                    <div class="flex items-center space-x-3">
+                        <div class="bg-blue-600 text-white p-2.5 rounded-lg">
+                            <i class="fa-solid fa-user-shield"></i>
+                        </div>
+                        <h3 class="font-serif font-bold text-slate-900 text-lg">2. Protection Against Omnibus Implication</h3>
+                    </div>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Citing Supreme Court precedents such as <em>Kahkashan Kausar (2022)</em>, the Court actively scrutinizes charge-sheets and FIRs to protect extended family members (in-laws, sisters-in-law) from vague, omnibus allegations. Proceedings are routinely severed and quashed for relatives lacking specific attribution, while maintaining trial scrutiny for the primary accused.
+                    </p>
+                </div>
+
+                <div class="bg-slate-50 p-6 rounded-lg border border-slate-200 space-y-3">
+                    <div class="flex items-center space-x-3">
+                        <div class="bg-emerald-600 text-white p-2.5 rounded-lg">
+                            <i class="fa-solid fa-gavel"></i>
+                        </div>
+                        <h3 class="font-serif font-bold text-slate-900 text-lg">3. Post-Conviction Quashing Powers</h3>
+                    </div>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        Demonstrating doctrinal flexibility, rulings such as <em>Shaikh Shaukat (2023)</em> established that Section 482 CrPC can even be invoked post-conviction while criminal appeals are pending before Sessions or Appellate courts, provided a genuine settlement (such as Khula and alimony) has been voluntarily reached.
+                    </p>
+                </div>
+
+                <div class="bg-slate-50 p-6 rounded-lg border border-slate-200 space-y-3">
+                    <div class="flex items-center space-x-3">
+                        <div class="bg-purple-600 text-white p-2.5 rounded-lg">
+                            <i class="fa-solid fa-shield-halved"></i>
+                        </div>
+                        <h3 class="font-serif font-bold text-slate-900 text-lg">4. Transition to BNSS / BNS Framework</h3>
+                    </div>
+                    <p class="text-sm text-slate-600 leading-relaxed">
+                        With the enactment of new criminal law statutes, recent rulings like <em>Akash Bhimrao Ingle (2026)</em> seamlessly apply Section 528 BNSS (inherent powers corresponding to old Section 482 CrPC) and Section 85 BNS (corresponding to Section 498A IPC), ensuring continuity in judicial protection against arbitrary matrimonial prosecutions.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION 4: JUDGMENT REPOSITORY TABLE -->
+        <section id="repository" class="bg-white rounded-xl p-6 sm:p-8 card-shadow border border-slate-200 space-y-6">
+            <div class="flex flex-col md:flex-row justify-between items-start md:items-center gap-4 border-b border-slate-100 pb-4">
+                <div>
+                    <h2 class="text-2xl font-serif font-bold text-slate-900">Complete Judgment Repository (2021–2026)</h2>
+                    <p class="text-sm text-slate-500 mt-1">Search, filter, and inspect all 20 coded Bombay High Court judgments in the dataset.</p>
+                </div>
+                <!-- Search and Filter controls -->
+                <div class="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
+                    <div class="relative">
+                        <span class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none text-slate-400">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </span>
+                        <input type="text" id="searchInput" placeholder="Search case name, citation..." class="pl-9 pr-4 py-2 border border-slate-300 rounded-lg text-sm focus:outline-none focus:ring-2 focus:ring-amber-500 w-full sm:w-64">
+                    </div>
+                    <select id="yearFilter" class="border border-slate-300 rounded-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-amber-500 bg-white">
+                        <option value="">All Years</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                    </select>
+                </div>
+            </div>
+
+            <!-- Table Container -->
+            <div class="overflow-x-auto rounded-lg border border-slate-200">
+                <table class="min-w-full divide-y divide-slate-200 text-sm legal-table" id="judgmentTable">
+                    <thead>
+                        <tr>
+                            <th class="px-4 py-3 text-left font-semibold">#</th>
+                            <th class="px-4 py-3 text-left font-semibold">Case Name & Citation</th>
+                            <th class="px-4 py-3 text-left font-semibold">Year</th>
+                            <th class="px-4 py-3 text-left font-semibold">Outcome</th>
+                            <th class="px-4 py-3 text-left font-semibold">Provision</th>
+                            <th class="px-4 py-3 text-left font-semibold">Core Holding</th>
+                            <th class="px-4 py-3 text-center font-semibold">Link</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-200 bg-white" id="tableBody">
+                        <!-- Populated dynamically via JS -->
+                    </tbody>
+                </table>
+            </div>
+            <div class="flex justify-between items-center text-xs text-slate-500 pt-2">
+                <span id="rowCount">Showing 20 of 20 judgments</span>
+                <span>Source: Official eCourts & Bombay High Court Repository</span>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-slate-900 text-slate-400 py-10 mt-16 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="space-y-2 text-center md:text-left">
+                <div class="text-white font-serif font-bold text-lg">Bombay High Court Matrimonial Quashing Research Project</div>
+                <p class="text-xs text-slate-400">Team: Legal Eagles · 2021 to 2026 Empirical Analysis</p>
+            </div>
+            <div class="flex space-x-6 text-sm">
+                <a href="https://github.com/legal-research/bombay-hc-498a-quashing" class="hover:text-white transition-colors flex items-center">
+                    <i class="fa-brands fa-github mr-2"></i> GitHub Repository
+                </a>
+                <a href="#overview" class="hover:text-white transition-colors">Back to Top</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript Data and App Logic -->
+    <script>
+        const judgmentsData = [
+            {
+                "id": "1",
+                "case_name": "Manish s/o Rajkumar Bhagwani and Ors. v. State of Maharashtra",
+                "citation": "Criminal Application (APL) No. 686 of 2018",
+                "year": 2023,
+                "outcome": "Allowed",
+                "provision": "s 482 CrPC; s 498A IPC",
+                "holding": "FIR and charge-sheet quashed: after mutual divorce and ₹6 lakh settlement, continuing prosecution serves no purpose.",
+                "link": "https://hcservices.ecourts.gov.in/"
+            },
+            {
+                "id": "2",
+                "case_name": "Shrikant Gajanan Pendor and 3 Others v. State of Maharashtra",
+                "citation": "Criminal Application (APL) No. 1232 of 2022",
+                "year": 2025,
+                "outcome": "Partly allowed",
+                "provision": "s 498A IPC",
+                "holding": "Quashed only for sisters-in-law due to vague allegations; trial maintained for husband.",
+                "link": "https://hcservices.ecourts.gov.in/"
+            },
+            {
+                "id": "3",
+                "case_name": "Gaurav s/o Arun Bute and Ors. v. State of Maharashtra",
+                "citation": "Criminal Application (APL) No. 307 of 2025",
+                "year": 2026,
+                "outcome": "Partly allowed",
+                "provision": "s 498A IPC",
+                "holding": "Quashed for six relatives due to omnibus allegations; maintained against husband.",
+                "link": "https://hcservices.ecourts.gov.in/"
+            },
+            {
+                "id": "4",
+                "case_name": "Akash Bhimrao Ingle and Ors. v. State of Maharashtra",
+                "citation": "Criminal Application (APL) No. 1956 of 2025",
+                "year": 2026,
+                "outcome": "Allowed",
+                "provision": "s 528 BNSS; s 85 BNS",
+                "holding": "FIR quashed against all applicants as allegations were general and lacked specific acts of cruelty.",
+                "link": "https://hcservices.ecourts.gov.in/"
+            },
+            {
+                "id": "5",
+                "case_name": "Sunita Kumari and Others v. State of Maharashtra",
+                "citation": "Criminal Application (APL) No. 1660 of 2022",
+                "year": 2022,
+                "outcome": "Dismissed",
+                "provision": "s 498A IPC; s 482 CrPC",
+                "holding": "Application dismissed with ₹10,000 costs; prima facie case established against applicants.",
+                "link": "https://hcservices.ecourts.gov.in/"
+            },
+            {
+                "id": "6",
+                "case_name": "Shaikh Shaukat s/o Majit @ Majid Patel v. State of Maharashtra",
+                "citation": "Criminal Application No. 229 of 2022",
+                "year": 2023,
+                "outcome": "Allowed",
+                "provision": "s 482 CrPC; s 498A IPC",
+                "holding": "Quashed post-conviction during pending appeal based on voluntary settlement (Khula and alimony).",
+                "link": "https://www.livelaw.in/"
+            },
+            {
+                "id": "7",
+                "case_name": "Vrushali Jayesh Kore v. State of Maharashtra",
+                "citation": "2023 SCC OnLine Bom 85",
+                "year": 2023,
+                "outcome": "Allowed",
+                "provision": "s 482 CrPC; s 498A IPC",
+                "holding": "FIR quashed against married sister as allegations disclosed no evidence of criminal acts.",
+                "link": "https://www.scconline.com/"
+            },
+            {
+                "id": "8",
+                "case_name": "Sammeer Dilip Sonawane and Ors. v. State of Maharashtra",
+                "citation": "Criminal Writ Petition No. 2918 of 2024",
+                "year": 2024,
+                "outcome": "Allowed",
+                "provision": "s 498A IPC",
+                "holding": "Criminal proceeding quashed upon presentation of wife's unconditional settlement affidavit.",
+                "link": "https://rawlaw.in/"
+            },
+            {
+                "id": "9",
+                "case_name": "Rushik Rajendra Shah and Ors. v. Ruchika Rushik Shah",
+                "citation": "Criminal Application No. 978 of 2024",
+                "year": 2024,
+                "outcome": "Allowed",
+                "provision": "s 482 CrPC; s 498A IPC",
+                "holding": "Proceedings set aside after mutual divorce and settlement covering child interests.",
+                "link": "https://lawtext.in/"
+            },
+            {
+                "id": "10",
+                "case_name": "Vaibhav Gopaldas Mundada and Ors. v. State of Maharashtra",
+                "citation": "Criminal Application (APL) No. 1349 of 2024",
+                "year": 2026,
+                "outcome": "Allowed",
+                "provision": "s 482 CrPC; s 498A IPC",
+                "holding": "Quashed as charges were general and omnibus, initiated after failed divorce talks.",
+                "link": "https://www.shoneekapoor.com/"
+            },
+            {
+                "id": "11",
+                "case_name": "Tushar Bhanudas Bharambe & Ors. v. State of Maharashtra",
+                "citation": "Criminal Application (APL) No. 1287 of 2021",
+                "year": 2022,
+                "outcome": "Allowed",
+                "provision": "s 482 CrPC; s 498A IPC",
+                "holding": "FIR and criminal case quashed upon mutual compromise in matrimonial dispute.",
+                "link": "https://supremetoday.ai/"
+            },
+            {
+                "id": "12",
+                "case_name": "Jalendra Sakharam Khare & Ors. v. State of Maharashtra",
+                "citation": "Criminal Application (APL) No. 179 of 2020",
+                "year": 2023,
+                "outcome": "Allowed",
+                "provision": "s 482 CrPC; Domestic Violence Act",
+                "holding": "Proceedings quashed against relatives due to lack of shared household and specific allegations.",
+                "link": "https://indiankanoon.org/"
+            },
+            {
+                "id": "13",
+                "case_name": "Umesh s/o Krishnarao Shirpurkar v. State of Maharashtra",
+                "citation": "Criminal Application (APL) No. 698 of 2022",
+                "year": 2022,
+                "outcome": "Allowed",
+                "provision": "s 482 CrPC; s 498A IPC",
+                "holding": "FIR and proceedings quashed as the matrimonial dispute was private and resolved voluntarily.",
+                "link": "https://indiankanoon.org/"
+            },
+            {
+                "id": "14",
+                "case_name": "Anurag s/o Dhanraj Meshram & 4 Ors. v. State of Maharashtra",
+                "citation": "Criminal Application (APL) No. 855 of 2021",
+                "year": 2022,
+                "outcome": "Allowed",
+                "provision": "s 482 CrPC; s 498A IPC",
+                "holding": "FIR quashed as dispute was personal and continuing prosecution caused unnecessary judicial burden.",
+                "link": "https://indiankanoon.org/"
+            },
+            {
+                "id": "15",
+                "case_name": "Akshay s/o Rammilan Pal v. State of Maharashtra",
+                "citation": "Criminal Application (APL) No. 981 of 2022",
+                "year": 2022,
+                "outcome": "Allowed",
+                "provision": "s 482 CrPC; s 498A IPC",
+                "holding": "FIR and proceedings quashed as matrimonial dispute was purely private and settled amicably.",
+                "link": "https://indiankanoon.org/"
+            },
+            {
+                "id": "16",
+                "case_name": "Ganesh s/o Chandrakant Sadawarti & 4 Ors. v. State of Maharashtra",
+                "citation": "Criminal Application (APL) No. 335 of 2023",
+                "year": 2026,
+                "outcome": "Allowed",
+                "provision": "s 482 CrPC; s 498A IPC",
+                "holding": "FIR quashed: omnibus allegations and ₹8 lakh settlement taken by wife showed misuse of process.",
+                "link": "https://indiankanoon.org/"
+            },
+            {
+                "id": "17",
+                "case_name": "Prasanna S/o Vijay Joshi and 2 Others v. State of Maharashtra",
+                "citation": "Criminal Application (APL) No. 712 of 2024",
+                "year": 2026,
+                "outcome": "Allowed",
+                "provision": "s 482 CrPC; s 498A IPC",
+                "holding": "Criminal application allowed and proceedings quashed following amicable family settlement.",
+                "link": "https://hcservices.ecourts.gov.in/"
+            },
+            {
+                "id": "18",
+                "case_name": "Vandana Rameshchandra Oza and Ors. v. State of Maharashtra",
+                "citation": "Criminal Application (APL) No. 445 of 2024",
+                "year": 2026,
+                "outcome": "Allowed",
+                "provision": "s 482 CrPC; s 498A IPC",
+                "holding": "Quashed against in-laws due to general and vague allegations lacking specific overt acts.",
+                "link": "https://hcservices.ecourts.gov.in/"
+            },
+            {
+                "id": "19",
+                "case_name": "Vaishali Janbaji Gawande v. State of Maharashtra",
+                "citation": "Criminal Application (APL) No. 892 of 2023",
+                "year": 2024,
+                "outcome": "Allowed",
+                "provision": "s 482 CrPC; s 498A IPC",
+                "holding": "Proceedings quashed upon joint compromise and mutual resolution between spouses.",
+                "link": "https://hcservices.ecourts.gov.in/"
+            },
+            {
+                "id": "20",
+                "case_name": "Payal w/o Umakant M. v. State of Maharashtra",
+                "citation": "Criminal Application (APL) No. 1024 of 2024",
+                "year": 2026,
+                "outcome": "Allowed",
+                "provision": "s 482 CrPC; s 498A IPC",
+                "holding": "FIR and charge-sheet set aside pursuant to voluntary settlement and consent terms.",
+                "link": "https://hcservices.ecourts.gov.in/"
+            }
+        ];
+
+        // Render Table
+        function renderTable(data) {
+            const tbody = document.getElementById('tableBody');
+            tbody.innerHTML = '';
+            
+            if (!data || data.length === 0) {
+                tbody.innerHTML = '<tr><td colspan="7" class="px-4 py-8 text-center text-slate-500">No matching judgments found.</td></tr>';
+                document.getElementById('rowCount').innerText = 'Showing 0 of 20 judgments';
+                return;
+            }
+
+            data.forEach(item => {
+                let badgeColor = 'bg-green-100 text-green-800';
+                if (item.outcome && item.outcome.toLowerCase().includes('partly')) badgeColor = 'bg-amber-100 text-amber-800';
+                if (item.outcome && item.outcome.toLowerCase().includes('dismiss')) badgeColor = 'bg-red-100 text-red-800';
+
+                const tr = document.createElement('tr');
+                tr.innerHTML = `
+                    <td class="px-4 py-3 whitespace-nowrap font-medium text-slate-900">${item.id || ''}</td>
+                    <td class="px-4 py-3">
+                        <div class="font-semibold text-slate-900">${item.case_name || ''}</div>
+                        <div class="text-xs text-slate-500 font-mono">${item.citation || ''}</div>
+                    </td>
+                    <td class="px-4 py-3 whitespace-nowrap text-slate-600">${item.year || ''}</td>
+                    <td class="px-4 py-3 whitespace-nowrap">
+                        <span class="px-2.5 py-1 text-xs font-semibold rounded-full ${badgeColor}">${item.outcome || ''}</span>
+                    </td>
+                    <td class="px-4 py-3 text-slate-600 text-xs font-mono">${item.provision || ''}</td>
+                    <td class="px-4 py-3 text-slate-700 text-xs max-w-xs truncate" title="${item.holding || ''}">${item.holding || ''}</td>
+                    <td class="px-4 py-3 whitespace-nowrap text-center">
+                        <a href="${item.link || '#'}" target="_blank" class="text-blue-600 hover:text-blue-800 font-medium text-xs bg-blue-50 hover:bg-blue-100 px-2.5 py-1 rounded transition-colors inline-flex items-center">
+                            <i class="fa-solid fa-external-link-alt mr-1"></i> PDF
+                        </a>
+                    </td>
+                `;
+                tbody.appendChild(tr);
+            });
+            document.getElementById('rowCount').innerText = `Showing ${data.length} of 20 judgments`;
+        }
+
+        // Search & Filter Logic
+        const searchInput = document.getElementById('searchInput');
+        const yearFilter = document.getElementById('yearFilter');
+
+        function filterData() {
+            const query = searchInput.value.toLowerCase();
+            const year = yearFilter.value;
+
+            const filtered = judgmentsData.filter(item => {
+                const matchesQuery = (item.case_name && item.case_name.toLowerCase().includes(query)) || 
+                                     (item.citation && item.citation.toLowerCase().includes(query)) || 
+                                     (item.provision && item.provision.toLowerCase().includes(query)) ||
+                                     (item.holding && item.holding.toLowerCase().includes(query));
+                const matchesYear = year === '' || item.year.toString() === year;
+                return matchesQuery && matchesYear;
+            });
+            renderTable(filtered);
+        }
+
+        if (searchInput) searchInput.addEventListener('input', filterData);
+        if (yearFilter) yearFilter.addEventListener('change', filterData);
+
+        // Initial table render on load
+        document.addEventListener('DOMContentLoaded', () => {
+            renderTable(judgmentsData);
+        });
+
+        renderTable(judgmentsData);
+
+        // Chart.js Visualizations
+        // Chart 1: Judgments per Year
+        const ctxYear = document.getElementById('chartJudgmentsPerYear').getContext('2d');
+        new Chart(ctxYear, {
+            type: 'bar',
+            data: {
+                labels: ['2021', '2022', '2023', '2024', '2025', '2026'],
+                datasets: [{
+                    label: 'Judgments',
+                    data: [0, 5, 4, 3, 1, 7],
+                    backgroundColor: '#0f766e',
+                    borderRadius: 6,
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { display: false } },
+                scales: {
+                    y: { beginAtZero: true, ticks: { stepSize: 1 } }
+                }
+            }
+        });
+
+        // Chart 2: Outcome Distribution
+        const ctxOutcome = document.getElementById('chartOutcome').getContext('2d');
+        new Chart(ctxOutcome, {
+            type: 'doughnut',
+            data: {
+                labels: ['Allowed (17)', 'Partly Allowed (2)', 'Dismissed (1)'],
+                datasets: [{
+                    data: [17, 2, 1],
+                    backgroundColor: ['#059669', '#d97706', '#dc2626'],
+                    borderWidth: 2,
+                    borderColor: '#ffffff'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { position: 'bottom', labels: { boxWidth: 12, font: { size: 12 } } }
+                }
+            }
+        });
+
+        // Chart 3: Case Types
+        const ctxCaseType = document.getElementById('chartCaseType').getContext('2d');
+        new Chart(ctxCaseType, {
+            type: 'bar',
+            data: {
+                labels: ['Criminal Application (APL)', 'Writ Petition / Other'],
+                datasets: [{
+                    label: 'Count',
+                    data: [19, 1],
+                    backgroundColor: ['#1e293b', '#64748b'],
+                    borderRadius: 6,
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: { legend: { display: false } },
+                scales: {
+                    y: { beginAtZero: true, ticks: { stepSize: 5 } }
+                }
+            }
+        });
+
+        // Chart 4: Primary Provisions
+        const ctxProvisions = document.getElementById('chartProvisions').getContext('2d');
+        new Chart(ctxProvisions, {
+            type: 'pie',
+            data: {
+                labels: ['CrPC s. 482 & IPC s. 498A', 'IPC s. 498A only', 'BNSS s. 528 & BNS s. 85'],
+                datasets: [{
+                    data: [16, 3, 1],
+                    backgroundColor: ['#0f766e', '#1e293b', '#d97706'],
+                    borderWidth: 2,
+                    borderColor: '#ffffff'
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: false,
+                plugins: {
+                    legend: { position: 'bottom', labels: { boxWidth: 12, font: { size: 11 } } }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
