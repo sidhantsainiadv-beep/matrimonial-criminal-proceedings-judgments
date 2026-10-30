@@ -1,5 +1,6 @@
 # matrimonial-criminal-proceedings-judgments
-## Team - Sidhhant Saini, Division- C
+## Team 
+Sidhhant Saini, Division- C
 Tamanna, Division- C
 Hemanya Sharma, Division- C
 Kratika Gupta, Division- C
